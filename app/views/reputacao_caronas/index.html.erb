@@ -1,0 +1,29 @@
+<h1>Listing reputacao_caronas</h1>
+
+<table>
+  <tr>
+    <th>Motorista</th>
+    <th>Carona</th>
+    <th>Justificativa</th>
+    <th>Ponto</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reputacao_caronas.each do |reputacao_carona| %>
+  <tr>
+    <td><%= reputacao_carona.motorista_id %></td>
+    <td><%= reputacao_carona.carona_id %></td>
+    <td><%= reputacao_carona.justificativa %></td>
+    <td><%= reputacao_carona.ponto %></td>
+    <td><%= link_to 'Show', reputacao_carona %></td>
+    <td><%= link_to 'Edit', edit_reputacao_carona_path(reputacao_carona) %></td>
+    <td><%= link_to 'Destroy', reputacao_carona, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Reputacao carona', new_reputacao_carona_path %>

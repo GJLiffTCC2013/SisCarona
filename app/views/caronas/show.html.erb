@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Login:</b>
+  <%= @carona.login %>
+</p>
+
+<p>
+  <b>Senha:</b>
+  <%= @carona.senha %>
+</p>
+
+<p>
+  <b>Nome:</b>
+  <%= @carona.nome %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @carona.email %>
+</p>
+
+<p>
+  <b>Endereco:</b>
+  <%= @carona.endereco %>
+</p>
+
+<p>
+  <b>Telefone:</b>
+  <%= @carona.telefone %>
+</p>
+
+<p>
+  <b>Rg:</b>
+  <%= @carona.rg %>
+</p>
+
+<p>
+  <b>Cpf:</b>
+  <%= @carona.cpf %>
+</p>
+
+<p>
+  <b>Pontos:</b>
+  <%= @carona.pontos %>
+</p>
+
+
+<%= link_to 'Edit', edit_carona_path(@carona) %> |
+<%= link_to 'Back', caronas_path %>

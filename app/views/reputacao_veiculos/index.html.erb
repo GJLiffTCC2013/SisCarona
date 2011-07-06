@@ -1,0 +1,29 @@
+<h1>Listing reputacao_veiculos</h1>
+
+<table>
+  <tr>
+    <th>Carona</th>
+    <th>Veiculo</th>
+    <th>Justificativa</th>
+    <th>Ponto</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reputacao_veiculos.each do |reputacao_veiculo| %>
+  <tr>
+    <td><%= reputacao_veiculo.carona_id %></td>
+    <td><%= reputacao_veiculo.veiculo_id %></td>
+    <td><%= reputacao_veiculo.justificativa %></td>
+    <td><%= reputacao_veiculo.ponto %></td>
+    <td><%= link_to 'Show', reputacao_veiculo %></td>
+    <td><%= link_to 'Edit', edit_reputacao_veiculo_path(reputacao_veiculo) %></td>
+    <td><%= link_to 'Destroy', reputacao_veiculo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Reputacao veiculo', new_reputacao_veiculo_path %>

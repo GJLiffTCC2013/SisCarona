@@ -1,0 +1,33 @@
+<%= form_for(@reputacao_veiculo) do |f| %>
+  <% if @reputacao_veiculo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reputacao_veiculo.errors.count, "error") %> prohibited this reputacao_veiculo from being saved:</h2>
+
+      <ul>
+      <% @reputacao_veiculo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :carona_id %><br />
+    <%= f.text_field :carona_id %>
+  </div>
+  <div class="field">
+    <%= f.label :veiculo_id %><br />
+    <%= f.text_field :veiculo_id %>
+  </div>
+  <div class="field">
+    <%= f.label :justificativa %><br />
+    <%= f.text_area :justificativa %>
+  </div>
+  <div class="field">
+    <%= f.label :ponto %><br />
+    <%= f.text_field :ponto %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

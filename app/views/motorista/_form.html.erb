@@ -1,0 +1,61 @@
+<%= form_for(@motoristum) do |f| %>
+  <% if @motoristum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@motoristum.errors.count, "error") %> prohibited this motoristum from being saved:</h2>
+
+      <ul>
+      <% @motoristum.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :login %><br />
+    <%= f.text_field :login %>
+  </div>
+  <div class="field">
+    <%= f.label :senha %><br />
+    <%= f.text_field :senha %>
+  </div>
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :endereco %><br />
+    <%= f.text_field :endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :telefone %><br />
+    <%= f.text_field :telefone %>
+  </div>
+  <div class="field">
+    <%= f.label :rg %><br />
+    <%= f.text_field :rg %>
+  </div>
+  <div class="field">
+    <%= f.label :cpf %><br />
+    <%= f.text_field :cpf %>
+  </div>
+  <div class="field">
+    <%= f.label :pontos %><br />
+    <%= f.text_field :pontos %>
+  </div>
+  <div class="field">
+    <%= f.label :cnh %><br />
+    <%= f.text_field :cnh %>
+  </div>
+  <div class="field">
+    <%= f.label :validadeCnh %><br />
+    <%= f.text_field :validadeCnh %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

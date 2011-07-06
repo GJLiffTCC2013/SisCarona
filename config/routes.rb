@@ -1,4 +1,22 @@
 SistemaDeCarona::Application.routes.draw do
+  resources :viagems
+
+  resources :reputacao_caronas
+
+  resources :reputacao_motorista
+
+  resources :reputacao_veiculos
+
+  resources :veiculos
+
+  resources :caronas
+
+  resources :motorista
+
+  resources :cidades
+
+  resources :estados
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

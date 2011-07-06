@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  carona_id: 1
+  veiculo_id: 1
+  justificativa: MyText
+  ponto: 1
+
+two:
+  carona_id: 1
+  veiculo_id: 1
+  justificativa: MyText
+  ponto: 1

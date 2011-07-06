@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  placa: MyString
+  modelo: MyString
+  marca: MyString
+  cor: MyString
+  pontos: 1
+  motorista_id: 1
+
+two:
+  placa: MyString
+  modelo: MyString
+  marca: MyString
+  cor: MyString
+  pontos: 1
+  motorista_id: 1

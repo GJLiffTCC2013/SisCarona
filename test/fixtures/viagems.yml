@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cidadeOrigem_id: 1
+  cidadeDestino_id: 1
+  saida: MyString
+  motorista_id: 1
+  carona_id: 1
+  preco: 1.5
+
+two:
+  cidadeOrigem_id: 1
+  cidadeDestino_id: 1
+  saida: MyString
+  motorista_id: 1
+  carona_id: 1
+  preco: 1.5

@@ -1,0 +1,2 @@
+module ReputacaoCaronasHelper
+end

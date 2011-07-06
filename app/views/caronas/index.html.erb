@@ -1,0 +1,39 @@
+<h1>Listing caronas</h1>
+
+<table>
+  <tr>
+    <th>Login</th>
+    <th>Senha</th>
+    <th>Nome</th>
+    <th>Email</th>
+    <th>Endereco</th>
+    <th>Telefone</th>
+    <th>Rg</th>
+    <th>Cpf</th>
+    <th>Pontos</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @caronas.each do |carona| %>
+  <tr>
+    <td><%= carona.login %></td>
+    <td><%= carona.senha %></td>
+    <td><%= carona.nome %></td>
+    <td><%= carona.email %></td>
+    <td><%= carona.endereco %></td>
+    <td><%= carona.telefone %></td>
+    <td><%= carona.rg %></td>
+    <td><%= carona.cpf %></td>
+    <td><%= carona.pontos %></td>
+    <td><%= link_to 'Show', carona %></td>
+    <td><%= link_to 'Edit', edit_carona_path(carona) %></td>
+    <td><%= link_to 'Destroy', carona, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Carona', new_carona_path %>

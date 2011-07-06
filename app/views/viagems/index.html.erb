@@ -1,0 +1,33 @@
+<h1>Listing viagems</h1>
+
+<table>
+  <tr>
+    <th>Cidadeorigem</th>
+    <th>Cidadedestino</th>
+    <th>Saida</th>
+    <th>Motorista</th>
+    <th>Carona</th>
+    <th>Preco</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @viagems.each do |viagem| %>
+  <tr>
+    <td><%= viagem.cidadeOrigem_id %></td>
+    <td><%= viagem.cidadeDestino_id %></td>
+    <td><%= viagem.saida %></td>
+    <td><%= viagem.motorista_id %></td>
+    <td><%= viagem.carona_id %></td>
+    <td><%= viagem.preco %></td>
+    <td><%= link_to 'Show', viagem %></td>
+    <td><%= link_to 'Edit', edit_viagem_path(viagem) %></td>
+    <td><%= link_to 'Destroy', viagem, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Viagem', new_viagem_path %>

@@ -1,0 +1,43 @@
+<h1>Listing motorista</h1>
+
+<table>
+  <tr>
+    <th>Login</th>
+    <th>Senha</th>
+    <th>Nome</th>
+    <th>Email</th>
+    <th>Endereco</th>
+    <th>Telefone</th>
+    <th>Rg</th>
+    <th>Cpf</th>
+    <th>Pontos</th>
+    <th>Cnh</th>
+    <th>Validadecnh</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @motorista.each do |motoristum| %>
+  <tr>
+    <td><%= motoristum.login %></td>
+    <td><%= motoristum.senha %></td>
+    <td><%= motoristum.nome %></td>
+    <td><%= motoristum.email %></td>
+    <td><%= motoristum.endereco %></td>
+    <td><%= motoristum.telefone %></td>
+    <td><%= motoristum.rg %></td>
+    <td><%= motoristum.cpf %></td>
+    <td><%= motoristum.pontos %></td>
+    <td><%= motoristum.cnh %></td>
+    <td><%= motoristum.validadeCnh %></td>
+    <td><%= link_to 'Show', motoristum %></td>
+    <td><%= link_to 'Edit', edit_motoristum_path(motoristum) %></td>
+    <td><%= link_to 'Destroy', motoristum, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Motoristum', new_motoristum_path %>

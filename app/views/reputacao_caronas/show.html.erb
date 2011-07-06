@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Motorista:</b>
+  <%= @reputacao_carona.motorista_id %>
+</p>
+
+<p>
+  <b>Carona:</b>
+  <%= @reputacao_carona.carona_id %>
+</p>
+
+<p>
+  <b>Justificativa:</b>
+  <%= @reputacao_carona.justificativa %>
+</p>
+
+<p>
+  <b>Ponto:</b>
+  <%= @reputacao_carona.ponto %>
+</p>
+
+
+<%= link_to 'Edit', edit_reputacao_carona_path(@reputacao_carona) %> |
+<%= link_to 'Back', reputacao_caronas_path %>
