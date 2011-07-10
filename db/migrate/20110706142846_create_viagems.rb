@@ -4,7 +4,7 @@ class CreateViagems < ActiveRecord::Migration
       t.integer :cidadeOrigem_id
       t.integer :cidadeDestino_id
       t.string :saida
-      t.integer :motorista_id
+      t.integer :motoristum_id
       t.integer :carona_id
       t.float :preco
 

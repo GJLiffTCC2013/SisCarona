@@ -6,7 +6,7 @@ class CreateVeiculos < ActiveRecord::Migration
       t.string :marca
       t.string :cor
       t.integer :pontos
-      t.integer :motorista_id
+      t.integer :motoristum_id
 
       t.timestamps
     end

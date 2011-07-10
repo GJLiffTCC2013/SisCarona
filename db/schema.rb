@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(:version => 20110706142846) do
   end
 
   create_table "reputacao_caronas", :force => true do |t|
-    t.integer  "motorista_id"
+    t.integer  "motoristum_id"
     t.integer  "carona_id"
     t.text     "justificativa"
     t.integer  "ponto"
@@ -66,7 +66,7 @@ ActiveRecord::Schema.define(:version => 20110706142846) do
 
   create_table "reputacao_motorista", :force => true do |t|
     t.integer  "carona_id"
-    t.integer  "motorista_id"
+    t.integer  "motoristum_id"
     t.text     "justificativa"
     t.integer  "ponto"
     t.datetime "created_at"
@@ -88,7 +88,7 @@ ActiveRecord::Schema.define(:version => 20110706142846) do
     t.string   "marca"
     t.string   "cor"
     t.integer  "pontos"
-    t.integer  "motorista_id"
+    t.integer  "motoristum_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -97,7 +97,7 @@ ActiveRecord::Schema.define(:version => 20110706142846) do
     t.integer  "cidadeOrigem_id"
     t.integer  "cidadeDestino_id"
     t.string   "saida"
-    t.integer  "motorista_id"
+    t.integer  "motoristum_id"
     t.integer  "carona_id"
     t.float    "preco"
     t.datetime "created_at"

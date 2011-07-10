@@ -1,7 +1,7 @@
 class CreateReputacaoCaronas < ActiveRecord::Migration
   def self.up
     create_table :reputacao_caronas do |t|
-      t.integer :motorista_id
+      t.integer :motoristum_id
       t.integer :carona_id
       t.text :justificativa
       t.integer :ponto
