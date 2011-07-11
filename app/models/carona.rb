@@ -11,4 +11,5 @@ class Carona < ActiveRecord::Base
 	
 	has_many :viagem
 	has_many :reputacao_carona
+	has_many :reputacao_veiculo
 end
