@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :estado_id %><br />
-    <%= f.text_field :estado_id %>
+    <%= f.select :estado_id, Estado.all.map {|c| [c.nome, c.id]} %>
   </div>
   <div class="actions">
     <%= f.submit %>

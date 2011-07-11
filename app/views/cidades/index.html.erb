@@ -12,7 +12,7 @@
 <% @cidades.each do |cidade| %>
   <tr>
     <td><%= cidade.nome %></td>
-    <td><%= cidade.estado_id %></td>
+    <td><%= cidade.estado.try :nome %></td>
     <td><%= link_to 'Show', cidade %></td>
     <td><%= link_to 'Edit', edit_cidade_path(cidade) %></td>
     <td><%= link_to 'Destroy', cidade, :confirm => 'Are you sure?', :method => :delete %></td>
