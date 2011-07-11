@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :motorista_id %><br />
-    <%= f.text_field :motorista_id %>
+    <%= f.label :motoristum_id %><br />
+	<%= f.select :motoristum_id, Motoristum.all.map {|c| [c.nome, c.id]} %>
   </div>
   <div class="field">
     <%= f.label :carona_id %><br />
-    <%= f.text_field :carona_id %>
+	<%= f.select :carona_id, Carona.all.map {|c| [c.nome, c.id]} %>
   </div>
   <div class="field">
     <%= f.label :justificativa %><br />
@@ -25,7 +25,8 @@
   </div>
   <div class="field">
     <%= f.label :ponto %><br />
-    <%= f.text_field :ponto %>
+    <!--%= f.text_field :ponto %-->
+	<%= f.select :ponto, ['-1','0','1']%>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -7,7 +7,7 @@
 
 <p>
   <b>Estado:</b>
-  <%= @cidade.estado_id %>
+  <%= @cidade.estado.try :nome %>
 </p>
 
 
