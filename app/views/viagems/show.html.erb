@@ -2,12 +2,12 @@
 
 <p>
   <b>Cidadeorigem:</b>
-  <%= @viagem.cidadeOrigem_id %>
+  <%= @viagem.cidadeOrigem.try :nome %>
 </p>
 
 <p>
   <b>Cidadedestino:</b>
-  <%= @viagem.cidadeDestino_id %>
+  <%= @viagem.cidadeDestino.try :nome %>
 </p>
 
 <p>
@@ -17,12 +17,12 @@
 
 <p>
   <b>Motorista:</b>
-  <%= @viagem.motorista_id %>
+  <%= @viagem.motoristum.try :nome %>
 </p>
 
 <p>
   <b>Carona:</b>
-  <%= @viagem.carona_id %>
+  <%= @viagem.carona.try :nome %>
 </p>
 
 <p>

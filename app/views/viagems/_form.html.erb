@@ -13,23 +13,23 @@
 
   <div class="field">
     <%= f.label :cidadeOrigem_id %><br />
-    <%= f.text_field :cidadeOrigem_id %>
+    <%= f.select :cidadeOrigem_id, Cidade.all.map {|c| [c.nome, c.id]} %>
   </div>
   <div class="field">
     <%= f.label :cidadeDestino_id %><br />
-    <%= f.text_field :cidadeDestino_id %>
+    <%= f.select :cidadeDestino_id, Cidade.all.map {|c| [c.nome, c.id]} %>
   </div>
   <div class="field">
     <%= f.label :saida %><br />
     <%= f.text_field :saida %>
   </div>
   <div class="field">
-    <%= f.label :motorista_id %><br />
-    <%= f.text_field :motorista_id %>
+    <%= f.label :motoristum_id %><br />
+	<%= f.select :motoristum_id, Motoristum.all.map {|c| [c.nome, c.id]} %>
   </div>
   <div class="field">
     <%= f.label :carona_id %><br />
-    <%= f.text_field :carona_id %>
+	<%= f.select :carona_id, Carona.all.map {|c| [c.nome, c.id]} %>
   </div>
   <div class="field">
     <%= f.label :preco %><br />
