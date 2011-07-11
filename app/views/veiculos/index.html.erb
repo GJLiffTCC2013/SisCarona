@@ -20,7 +20,7 @@
     <td><%= veiculo.marca %></td>
     <td><%= veiculo.cor %></td>
     <td><%= veiculo.pontos %></td>
-    <td><%= veiculo.motorista_id %></td>
+    <td><%= veiculo.motoristum.try :nome %></td>
     <td><%= link_to 'Show', veiculo %></td>
     <td><%= link_to 'Edit', edit_veiculo_path(veiculo) %></td>
     <td><%= link_to 'Destroy', veiculo, :confirm => 'Are you sure?', :method => :delete %></td>
