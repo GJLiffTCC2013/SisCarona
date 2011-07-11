@@ -2,12 +2,12 @@
 
 <p>
   <b>Carona:</b>
-  <%= @reputacao_veiculo.carona_id %>
+  <%= @reputacao_veiculo.carona.try :nome %>
 </p>
 
 <p>
   <b>Veiculo:</b>
-  <%= @reputacao_veiculo.veiculo_id %>
+  <%= @reputacao_veiculo.veiculo.try :modelo %>
 </p>
 
 <p>

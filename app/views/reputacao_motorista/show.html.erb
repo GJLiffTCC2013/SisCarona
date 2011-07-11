@@ -2,12 +2,12 @@
 
 <p>
   <b>Carona:</b>
-  <%= @reputacao_motoristum.carona_id %>
+  <%= @reputacao_motoristum.carona.try :nome %>
 </p>
 
 <p>
   <b>Motorista:</b>
-  <%= @reputacao_motoristum.motorista_id %>
+  <%= @reputacao_motoristum.motoristum.try :nome %>
 </p>
 
 <p>

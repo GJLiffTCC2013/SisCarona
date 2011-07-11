@@ -13,8 +13,8 @@
 
 <% @reputacao_motorista.each do |reputacao_motoristum| %>
   <tr>
-    <td><%= reputacao_motoristum.carona_id %></td>
-    <td><%= reputacao_motoristum.motorista_id %></td>
+    <td><%= reputacao_motoristum.carona.try :nome %></td>
+    <td><%= reputacao_motoristum.motoristum.try :nome %></td>
     <td><%= reputacao_motoristum.justificativa %></td>
     <td><%= reputacao_motoristum.ponto %></td>
     <td><%= link_to 'Show', reputacao_motoristum %></td>
