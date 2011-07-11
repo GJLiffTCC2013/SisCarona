@@ -3,6 +3,7 @@ class Motoristum < ActiveRecord::Base
 	validates_presence_of :validadeCnh, :message => "O campo validade CNH deve ser preenchido"
 	validates_presence_of :login, :message => "o campo login deve ser preenchido"
 	validates_presence_of :senha, :message => "Uma senha deve ser escolhida"
+	validates_presence_of :nome, :message => "O campo nome deve ser preenchido"
 	validates_presence_of :endereco, :message => "O endereco deve ser preenchido"
 	validates_presence_of :telefone, :message => "Um telefone para contato deve ser preenchido"
 	validates_presence_of :rg, :message => "RG deve ser preenchido"
@@ -14,5 +15,6 @@ class Motoristum < ActiveRecord::Base
 	
 	has_many :viagem
 	has_many :veiculo
-	
+	has_many :reputacao_motoristum
+	has_many :reputacao_carona
 end
