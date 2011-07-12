@@ -44,7 +44,7 @@ class EstadosController < ApplicationController
 
     respond_to do |format|
       if @estado.save
-        format.html { redirect_to(@estado, :notice => 'Estado was successfully created.') }
+        format.html { redirect_to(@estado, :notice => 'Estado criado com sucesso!') }
         format.xml  { render :xml => @estado, :status => :created, :location => @estado }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class EstadosController < ApplicationController
 
     respond_to do |format|
       if @estado.update_attributes(params[:estado])
-        format.html { redirect_to(@estado, :notice => 'Estado was successfully updated.') }
+        format.html { redirect_to(@estado, :notice => 'Estado alterado com sucesso!') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

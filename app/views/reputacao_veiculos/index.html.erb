@@ -17,13 +17,13 @@
     <td><%= reputacao_veiculo.veiculo.try :modelo %></td>
     <td><%= reputacao_veiculo.justificativa %></td>
     <td><%= reputacao_veiculo.ponto %></td>
-    <td><%= link_to 'Show', reputacao_veiculo %></td>
-    <td><%= link_to 'Edit', edit_reputacao_veiculo_path(reputacao_veiculo) %></td>
-    <td><%= link_to 'Destroy', reputacao_veiculo, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Mostrar', reputacao_veiculo %></td>
+    <td><%= link_to 'Editar', edit_reputacao_veiculo_path(reputacao_veiculo) %></td>
+    <td><%= link_to 'Excluir', reputacao_veiculo, :confirm => 'Voce tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Reputacao veiculo', new_reputacao_veiculo_path %>
+<%= link_to 'Nova reputacao para veiculo', new_reputacao_veiculo_path %>

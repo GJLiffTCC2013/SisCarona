@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Cidadeorigem:</b>
+  <b>Cidade de Origem:</b>
   <%= @viagem.cidadeOrigem.try :nome %>
 </p>
 
 <p>
-  <b>Cidadedestino:</b>
+  <b>Cidade de Destino:</b>
   <%= @viagem.cidadeDestino.try :nome %>
 </p>
 
@@ -31,5 +31,5 @@
 </p>
 
 
-<%= link_to 'Edit', edit_viagem_path(@viagem) %> |
-<%= link_to 'Back', viagems_path %>
+<%= link_to 'Editar', edit_viagem_path(@viagem) %> |
+<%= link_to 'Voltar', viagems_path %>

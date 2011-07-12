@@ -6,11 +6,6 @@
 </p>
 
 <p>
-  <b>Senha:</b>
-  <%= @motoristum.senha %>
-</p>
-
-<p>
   <b>Nome:</b>
   <%= @motoristum.nome %>
 </p>
@@ -31,12 +26,12 @@
 </p>
 
 <p>
-  <b>Rg:</b>
+  <b>RG:</b>
   <%= @motoristum.rg %>
 </p>
 
 <p>
-  <b>Cpf:</b>
+  <b>CPF:</b>
   <%= @motoristum.cpf %>
 </p>
 
@@ -46,15 +41,15 @@
 </p>
 
 <p>
-  <b>Cnh:</b>
+  <b>CNH:</b>
   <%= @motoristum.cnh %>
 </p>
 
 <p>
-  <b>Validadecnh:</b>
+  <b>Validade de CNH:</b>
   <%= @motoristum.validadeCnh %>
 </p>
 
 
-<%= link_to 'Edit', edit_motoristum_path(@motoristum) %> |
-<%= link_to 'Back', motorista_path %>
+<%= link_to 'Editar', edit_motoristum_path(@motoristum) %> |
+<%= link_to 'Voltar', motorista_path %>

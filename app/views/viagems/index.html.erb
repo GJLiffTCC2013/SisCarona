@@ -2,8 +2,8 @@
 
 <table>
   <tr>
-    <th>Cidadeorigem</th>
-    <th>Cidadedestino</th>
+    <th>Cidade de Origem</th>
+    <th>Cidade de Destino</th>
     <th>Saida</th>
     <th>Motorista</th>
     <th>Carona</th>
@@ -21,13 +21,13 @@
     <td><%= viagem.motoristum.try :nome %></td>
     <td><%= viagem.carona.try :nome %></td>
     <td><%= viagem.preco %></td>
-    <td><%= link_to 'Show', viagem %></td>
-    <td><%= link_to 'Edit', edit_viagem_path(viagem) %></td>
-    <td><%= link_to 'Destroy', viagem, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Mostrar', viagem %></td>
+    <td><%= link_to 'Editar', edit_viagem_path(viagem) %></td>
+    <td><%= link_to 'Excluir', viagem, :confirm => 'Voce tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Viagem', new_viagem_path %>
+<%= link_to 'Nova viagem', new_viagem_path %>

@@ -17,9 +17,9 @@
     <td><%= reputacao_carona.carona.try :nome %></td>
     <td><%= reputacao_carona.justificativa %></td>
     <td><%= reputacao_carona.ponto %></td>
-    <td><%= link_to 'Show', reputacao_carona %></td>
-    <td><%= link_to 'Edit', edit_reputacao_carona_path(reputacao_carona) %></td>
-    <td><%= link_to 'Destroy', reputacao_carona, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Mostrar', reputacao_carona %></td>
+    <td><%= link_to 'Editar', edit_reputacao_carona_path(reputacao_carona) %></td>
+    <td><%= link_to 'Excluir', reputacao_carona, :confirm => 'Voce tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

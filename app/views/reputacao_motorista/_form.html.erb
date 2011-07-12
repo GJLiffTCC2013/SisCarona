@@ -16,7 +16,7 @@
 	<%= f.select :carona_id, Carona.all.map {|c| [c.nome, c.id]} %>
   </div>
   <div class="field">
-    <%= f.label :motoristum_id %><br />
+    <%= f.label 'Motorista' %><br />
 	<%= f.select :motoristum_id, Motoristum.all.map {|c| [c.nome, c.id]} %>
   </div>
   <div class="field">

@@ -21,13 +21,13 @@
     <td><%= veiculo.cor %></td>
     <td><%= veiculo.pontos %></td>
     <td><%= veiculo.motoristum.try :nome %></td>
-    <td><%= link_to 'Show', veiculo %></td>
-    <td><%= link_to 'Edit', edit_veiculo_path(veiculo) %></td>
-    <td><%= link_to 'Destroy', veiculo, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Mostrar', veiculo %></td>
+    <td><%= link_to 'Voltar', edit_veiculo_path(veiculo) %></td>
+    <td><%= link_to 'Excluir', veiculo, :confirm => 'Voce tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Veiculo', new_veiculo_path %>
+<%= link_to 'Novo veiculo', new_veiculo_path %>

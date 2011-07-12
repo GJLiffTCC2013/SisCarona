@@ -44,7 +44,7 @@ class ReputacaoCaronasController < ApplicationController
 
     respond_to do |format|
       if @reputacao_carona.save
-        format.html { redirect_to(@reputacao_carona, :notice => 'Reputacao carona was successfully created.') }
+        format.html { redirect_to(@reputacao_carona, :notice => 'Voce reputou o carona com sucesso!') }
         format.xml  { render :xml => @reputacao_carona, :status => :created, :location => @reputacao_carona }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class ReputacaoCaronasController < ApplicationController
 
     respond_to do |format|
       if @reputacao_carona.update_attributes(params[:reputacao_carona])
-        format.html { redirect_to(@reputacao_carona, :notice => 'Reputacao carona was successfully updated.') }
+        format.html { redirect_to(@reputacao_carona, :notice => 'Voce alterou a reputacao do carona com sucesso!') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

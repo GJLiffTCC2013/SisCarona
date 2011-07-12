@@ -28,10 +28,6 @@
     <%= f.text_field :cor %>
   </div>
   <div class="field">
-    <%= f.label :pontos %><br />
-    <%= f.text_field :pontos %>
-  </div>
-  <div class="field">
     <%= f.label :motoristum_id %><br />
 	<%= f.select :motoristum_id, Motoristum.all.map {|c| [c.nome, c.id]} %>
   </div>

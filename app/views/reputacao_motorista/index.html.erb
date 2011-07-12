@@ -17,13 +17,13 @@
     <td><%= reputacao_motoristum.motoristum.try :nome %></td>
     <td><%= reputacao_motoristum.justificativa %></td>
     <td><%= reputacao_motoristum.ponto %></td>
-    <td><%= link_to 'Show', reputacao_motoristum %></td>
-    <td><%= link_to 'Edit', edit_reputacao_motoristum_path(reputacao_motoristum) %></td>
-    <td><%= link_to 'Destroy', reputacao_motoristum, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Mostrar', reputacao_motoristum %></td>
+    <td><%= link_to 'Editar', edit_reputacao_motoristum_path(reputacao_motoristum) %></td>
+    <td><%= link_to 'Excluir', reputacao_motoristum, :confirm => 'Voce tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Reputacao motoristum', new_reputacao_motoristum_path %>
+<%= link_to 'Nova reputacao para motorista', new_reputacao_motoristum_path %>

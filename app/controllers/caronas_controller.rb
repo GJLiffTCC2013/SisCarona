@@ -44,7 +44,7 @@ class CaronasController < ApplicationController
 
     respond_to do |format|
       if @carona.save
-        format.html { redirect_to(@carona, :notice => 'Carona was successfully created.') }
+        format.html { redirect_to(@carona, :notice => 'Carona criada com sucesso!') }
         format.xml  { render :xml => @carona, :status => :created, :location => @carona }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class CaronasController < ApplicationController
 
     respond_to do |format|
       if @carona.update_attributes(params[:carona])
-        format.html { redirect_to(@carona, :notice => 'Carona was successfully updated.') }
+        format.html { redirect_to(@carona, :notice => 'Cararona alterada com sucesso!') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
