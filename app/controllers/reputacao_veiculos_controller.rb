@@ -44,7 +44,7 @@ class ReputacaoVeiculosController < ApplicationController
 
     respond_to do |format|
       if @reputacao_veiculo.save
-        format.html { redirect_to(@reputacao_veiculo, :notice => 'Reputacao veiculo was successfully created.') }
+        format.html { redirect_to(@reputacao_veiculo, :notice => 'Voce reputou o veiculo com sucesso.') }
         format.xml  { render :xml => @reputacao_veiculo, :status => :created, :location => @reputacao_veiculo }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class ReputacaoVeiculosController < ApplicationController
 
     respond_to do |format|
       if @reputacao_veiculo.update_attributes(params[:reputacao_veiculo])
-        format.html { redirect_to(@reputacao_veiculo, :notice => 'Reputacao veiculo was successfully updated.') }
+        format.html { redirect_to(@reputacao_veiculo, :notice => 'A reputacao do veiculo foi atualizada com sucesso.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

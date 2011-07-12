@@ -1,7 +1,7 @@
 <%= form_for(@carona) do |f| %>
   <% if @carona.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@carona.errors.count, "error") %> prohibited this carona from being saved:</h2>
+      <h2><%= pluralize(@carona.errors.count, "error") %> nao puderam ser salvos:</h2>
 
       <ul>
       <% @carona.errors.full_messages.each do |msg| %>

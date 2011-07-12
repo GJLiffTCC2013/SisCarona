@@ -1,4 +1,4 @@
-<h1>Listing caronas</h1>
+<h1>Lista de caronas</h1>
 
 <table>
   <tr>
@@ -27,13 +27,13 @@
     <td><%= carona.rg %></td>
     <td><%= carona.cpf %></td>
     <td><%= carona.pontos %></td>
-    <td><%= link_to 'Show', carona %></td>
-    <td><%= link_to 'Edit', edit_carona_path(carona) %></td>
-    <td><%= link_to 'Destroy', carona, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Mostrar', carona %></td>
+    <td><%= link_to 'Editar', edit_carona_path(carona) %></td>
+    <td><%= link_to 'Excluir', carona, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Carona', new_carona_path %>
+<%= link_to 'Nova Carona', new_carona_path %>

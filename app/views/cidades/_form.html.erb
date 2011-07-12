@@ -1,7 +1,7 @@
 <%= form_for(@cidade) do |f| %>
   <% if @cidade.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@cidade.errors.count, "error") %> prohibited this cidade from being saved:</h2>
+      <h2><%= pluralize(@cidade.errors.count, "error") %> Nao puderam ser salvos:</h2>
 
       <ul>
       <% @cidade.errors.full_messages.each do |msg| %>

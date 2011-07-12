@@ -44,7 +44,7 @@ class ViagemsController < ApplicationController
 
     respond_to do |format|
       if @viagem.save
-        format.html { redirect_to(@viagem, :notice => 'Viagem was successfully created.') }
+        format.html { redirect_to(@viagem, :notice => 'A viagem foi adicionada com sucesso.') }
         format.xml  { render :xml => @viagem, :status => :created, :location => @viagem }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class ViagemsController < ApplicationController
 
     respond_to do |format|
       if @viagem.update_attributes(params[:viagem])
-        format.html { redirect_to(@viagem, :notice => 'Viagem was successfully updated.') }
+        format.html { redirect_to(@viagem, :notice => 'As informacoes da viagem foram alteradas.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
